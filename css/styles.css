@@ -4,7 +4,15 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-ul {
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+}
+ul,
+menu {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -40,7 +48,6 @@ a > svg {
 }
 .navigation {
   color: #212121;
-  list-style: none;
   display: flex;
   align-items: center;
   margin: 0;
@@ -121,7 +128,6 @@ a > svg {
   flex-wrap: wrap;
   gap: 30px;
   padding: 0px;
-  list-style: none;
   align-content: space-between;
 }
 .lorem-list-item {
@@ -139,17 +145,12 @@ a > svg {
   margin: 10px auto;
 }
 .what-we-do {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.7;
-  text-align: center;
   margin-bottom: 50px;
   margin-top: 94px;
 }
 .we-do-list {
   display: flex;
   justify-content: space-between;
-  list-style: none;
   margin-left: 0 auto;
 }
 .we-do-item:nth-child(-n + 2) {
@@ -159,10 +160,6 @@ a > svg {
   background: #f5f4fa;
 }
 .our-team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.7;
-  text-align: center;
   margin-bottom: 49px;
 }
 .team-list-items {
@@ -171,7 +168,6 @@ a > svg {
   justify-content: space-between;
   gap: 30px;
   padding: 0px;
-  list-style: none;
   text-align: center;
 }
 .team-list-item {
@@ -241,7 +237,6 @@ a > svg {
 }
 .project-categories {
   display: flex;
-  list-style: none;
   margin-bottom: 50px;
   justify-content: center;
 }
@@ -282,7 +277,6 @@ a > svg {
 .our-projects {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   gap: 30px;
   justify-content: space-between;
 }
@@ -327,4 +321,10 @@ a > svg {
   fill: #ffffff;
   background: #2196f3;
   padding: 12px;
+}
+.clients-list {
+  display: flex;
+}
+.border-client {
+  border: 1px solid #afb1b8;
 }
