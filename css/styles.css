@@ -28,6 +28,9 @@ ul {
 .cnav-item:first-child {
   margin-right: 30px;
 }
+a > svg {
+  margin-right: 10px;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -79,7 +82,9 @@ ul {
   align-items: center;
 }
 .background-business {
-  background: #2f303a url('people_at_work.jpg');
+  background: #2f303a
+    url(https://github.com/KZapal/goit-markup-hw-04/blob/main/images/effective_solutions/people_at_work.jpg?raw=true)
+    50% 50%;
 }
 .business-block {
   box-sizing: content-box;
@@ -289,11 +294,37 @@ ul {
 }
 .contacts-icon {
   fill: #757575;
-  margin-right: 10px;
 }
-.contacts-icon:hover {
+.contacts-icon:hover,
+.contacts-button:hover {
   fill: #2196f3;
 }
-.contacts-icon:focus {
+.contacts-icon:focus,
+.contacts-button:focus {
   fill: #2196f3;
+}
+.lorem-background {
+  background: #f5f4fa;
+  padding: 25px 100px;
+}
+.media-icon-background {
+  fill: #afb1b8;
+  background: #ffffff;
+  display: inline-flex;
+  gap: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  margin-bottom: 30px;
+}
+.media-icon-background:hover {
+  fill: #ffffff;
+  background: #2196f3;
+  padding: 12px;
+}
+.media-icon-background:focus {
+  fill: #ffffff;
+  background: #2196f3;
+  padding: 12px;
 }
