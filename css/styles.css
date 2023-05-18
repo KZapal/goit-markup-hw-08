@@ -88,19 +88,6 @@ a > svg {
   display: flex;
   align-items: center;
 }
-.background-business {
-  background: #2f303a
-    url(https://github.com/KZapal/goit-markup-hw-04/blob/main/images/effective_solutions/people_at_work.jpg?raw=true)
-    50% 50%;
-}
-.business-block {
-  box-sizing: content-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 97px;
-  padding-bottom: 97px;
-}
 .your-business {
   color: #ffffff;
   width: 600px;
@@ -109,6 +96,20 @@ a > svg {
   line-height: 1.4;
   text-align: center;
   margin-bottom: 30px;
+}
+.background-business {
+  background-image: url(https://github.com/KZapal/goit-markup-hw-04/blob/main/images/effective_solutions/people_at_work.jpg?raw=true);
+  filter: brightness(0.6);
+  background-color: rgb(47, 48, 58);
+  background-position: center;
+}
+.business-block {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 97px;
+  padding-bottom: 97px;
 }
 .order-service {
   background: #2196f3;
@@ -322,9 +323,65 @@ a > svg {
   background: #2196f3;
   padding: 12px;
 }
+.our-clients {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
 .clients-list {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.client-item {
+  fill: #afb1b8;
+}
+.client-item:hover,
+.client-item:focus {
+  fill: #2196f3;
 }
 .border-client {
   border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding: 0px;
+}
+
+.border-client:hover,
+.border-client:focus {
+  border: 1px solid #2196f3;
+}
+.footer-icon-background {
+  fill: #ffffff;
+  background: #ffffff1a;
+  display: inline-flex;
+  gap: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.footer-icon-background:hover,
+.footer-icon-background:focus {
+  fill: #ffffff;
+  background: #2196f3;
+  padding: 12px;
+}
+.position-below {
+  display: flex;
+  align-items: baseline;
+}
+.join-us {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.adress-container {
+  margin-right: 70px;
+}
+.footer-icon-background:nth-child(-n + 4) {
+  margin-right: 10px;
 }
