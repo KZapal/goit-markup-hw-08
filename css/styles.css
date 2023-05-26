@@ -45,6 +45,7 @@ a > svg {
 }
 .header-borders {
   border-bottom: 1px solid #ececec;
+  margin-bottom: 62px;
 }
 .navigation {
   color: #212121;
@@ -97,6 +98,7 @@ a > svg {
   letter-spacing: 0.06em;
   text-align: center;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 .background-business {
   background-color: #2f303a;
@@ -104,9 +106,10 @@ a > svg {
     url(https://github.com/KZapal/goit-markup-hw-04/blob/main/images/effective_solutions/people_at_work.jpg?raw=true);
   background-color: #2f303a66;
   max-width: 1600px;
+  height: 600px;
   background-size: cover;
   background-position: center;
-  padding-top: 97px;
+  padding-top: 200px;
   padding-bottom: 97px;
 }
 .business-block {
@@ -115,6 +118,7 @@ a > svg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 0px;
 }
 .order-service {
   background: #2196f3;
