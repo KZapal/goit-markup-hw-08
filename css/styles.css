@@ -110,6 +110,7 @@ a > svg {
   background-position: center;
   padding-top: 200px;
   padding-bottom: 97px;
+  margin: auto;
 }
 .business-block {
   box-sizing: content-box;
