@@ -402,3 +402,27 @@ a > svg {
 .footer-icon-background:nth-child(-n + 4) {
   margin-right: 10px;
 }
+
+*:hover,
+*:focus {
+  transition-property: all;
+  transition-duration: 250ms;
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.we-do-list div {
+  position: relative;
+}
+.we-do-list p {
+  color: #ffffff;
+  background: #2f303acc;
+  width: 370px;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  position: absolute;
+  text-align: center;
+  padding: 27px;
+  bottom: -10px;
+}
