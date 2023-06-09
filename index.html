@@ -330,6 +330,23 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close" data-modal-close>x</button>
+        <form class="modal-form">
+          <p>Zostaw swoje dane w formularzu poniżej</p>
+          <label class="form-item" for="name">Imie
+            <div class="name-area">
+              <svg width="12px" height="12px"><use href="images/icons.svg#icon-user"></use></svg><input name="name" id="name"/>
+            </div>
+          </label>
+          <label class="form-item" for="phone-number">Telefon
+            <input name="phone-number" id="phone-number" /></label>
+          <label class="form-item" for="email">E-mail
+            <input name="email" id="email"/></label>
+            <label class="form-item" for="comment">Komentarz
+              <textarea name="comment" id="comment" placeholder="Wprowadź tekst" rows="4"></textarea>
+            </label>
+            <div class="checkbox"><input type="checkbox" name="agreement" /><label class="statement">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label></div>
+            <button class="send-btn" type="submit">Wyślij</button>
+        </form>
       </div>
     </div>
     <script src="./JS/modal.js"></script>
