@@ -555,6 +555,7 @@ a[href='portfolio.html']:hover::after {
   border-radius: 50%;
   text-decoration: bold;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .is-hidden {
   opacity: 0;
@@ -572,16 +573,20 @@ a[href='portfolio.html']:hover::after {
   margin-bottom: 20px;
 }
 .newsletter-input {
+  color: #ffffff;
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  outline: none;
   background-color: inherit;
   padding-left: 16px;
   margin-right: 12px;
 }
 .newsletter-input:focus {
   border: 1px solid #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .newsletter button {
   width: 200px;
@@ -621,6 +626,7 @@ a[href='portfolio.html']:hover::after {
   line-height: 1.1;
   text-align: center;
   margin-bottom: 12px;
+  margin-top: 0;
 }
 .form-item {
   display: flex;
@@ -641,36 +647,44 @@ a[href='portfolio.html']:hover::after {
   height: 40px;
   margin-bottom: 10px;
 }
-input[type='text'],
-input[type='tel'],
-input[type='email'] {
-  outline: none;
+.form-input {
   border: 0;
+  outline: none;
   width: 100%;
   height: 100%;
   padding-left: 42px;
   padding-right: 12px;
 }
-input[type='text']:focus,
-input[type='tel']:focus,
-input[type='email']:focus {
+.form-input:focus,
+textarea:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
-  fill: #2196f3;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.form-area .form-icon:focus {
-  fill: #2196f3;
-  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-icon {
   position: absolute;
+  left: 0;
   margin: 11px 12px;
   fill: #212121;
+}
+.form-input:focus + .form-icon {
+  fill: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.comment-area {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+textarea {
+  outline: none;
+  border: 0;
+  padding: 12px 16px;
+  margin-bottom: 20px;
 }
 .statement {
   font-weight: 400;
@@ -679,9 +693,18 @@ input[type='email']:focus {
   color: #757575;
 }
 .checkbox {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 7px;
+}
+.checkbox a {
+  color: #2196f3;
+}
+input[type='checkbox'] {
+  width: 16px;
+  height: 15px;
 }
 .send-btn {
   width: 200px;
@@ -701,7 +724,4 @@ input[type='email']:focus {
   letter-spacing: 0.06em;
   margin-top: 30px;
   margin-left: 25%;
-}
-.form-text {
-  margin-bottom: 20px;
 }
