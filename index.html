@@ -322,7 +322,7 @@
         </div>
         <div class="newsletter">
           <h4>ZAPISZ SIĘ DO NEWSLETTERA</h4>
-          <input type="email" name="email" placeholder="E-mail">
+          <input class="newsletter-input" type="email" name="email" placeholder="E-mail" required />
           <button type="sumbit"><div class="in-button"><span class="newsletter-btn-text">Zapisz się</span><svg width="24px" height="24px"><use href="images/icons.svg#icon-paper-plane"></use></svg></div></button>
         </div>
       </div>
@@ -332,18 +332,21 @@
         <button type="button" class="close" data-modal-close>x</button>
         <form class="modal-form">
           <p>Zostaw swoje dane w formularzu poniżej</p>
-          <label class="form-item" for="name">Imie
-            <div class="name-area">
-              <svg width="12px" height="12px"><use href="images/icons.svg#icon-user"></use></svg><input name="name" id="name"/>
+          <div class="form-text"><label class="form-item" for="name">Imie</label>
+            <div class="form-area">
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="images/icons.svg#icon-person">
+                </use>
+              </svg>
+              <input type="text" name="name" id="name"/>
             </div>
-          </label>
-          <label class="form-item" for="phone-number">Telefon
-            <input name="phone-number" id="phone-number" /></label>
+          <label class="form-item" for="phone-number">Telefon</label>
+            <div class="form-area"><svg class="form-icon" width="18px" height="18px"><use href="images/icons.svg#icon-phone"></use></svg><input type="tel" name="phone-number" id="phone-number" /></div>
           <label class="form-item" for="email">E-mail
-            <input name="email" id="email"/></label>
-            <label class="form-item" for="comment">Komentarz
+            <div class="form-area"><svg class="form-icon" width="18px" height="18px"><use href="images/icons.svg#icon-email"></use></svg><input type="email" name="email" id="email"/></div>
+            <label class="form-item" for="comment">Komentarz</label>
               <textarea name="comment" id="comment" placeholder="Wprowadź tekst" rows="4"></textarea>
-            </label>
+            </div>
             <div class="checkbox"><input type="checkbox" name="agreement" /><label class="statement">Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label></div>
             <button class="send-btn" type="submit">Wyślij</button>
         </form>
