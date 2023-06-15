@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pl">
   <head>
     <!-- Kodowanie metainformacji -->
@@ -22,146 +22,146 @@
     <!-- Nagłowek i nawigacja-->
     <header class="header-borders">
       <div class="container">
-        <div class="test">
+        <div class="main-header">
           <nav>
-            <menu class="navigation">
-              <li class="nav-item">
-                <a class="navigation-button" href="/"
-                  ><span class="blue-part">Web</span
-                  ><span class="black-part">Studio</span></a
+            <menu class="main-header__page-links page-links">
+              <li class="page-links__item">
+                <a class="page-links__link  logo" href="/"
+                  ><span class="logo__blue-part">Web</span
+                  ><span class="logo__black-part">Studio</span></a
                 >
               </li>
-              <li class="nav-item">
-                <a class="navigation-button active-index" href="index.html">Agencja</a>
+              <li class="page-links__item">
+                <a class="page-links__link page-links__link--active" href="index.html">Agencja</a>
               </li>
-              <li class="nav-item">
-                <a class="navigation-button" href="portfolio.html">Portfolio</a>
+              <li class="page-links__item">
+                <a class="page-links__link" href="portfolio.html">Portfolio</a>
               </li>
-              <li class="nav-item">
-                <a class="navigation-button" href="/">Kontakt</a>
+              <li class="page-links__item">
+                <a class="page-links__link" href="/">Kontakt</a>
               </li>
             </menu>
           </nav>
-          <ul class="contacts-buttons">
-            <li class="cnav-item">            
-              <a class="contacts-button contacts-icon" href="mailto:info@devstudio.com"
+          <ul class="main-header__contacts-links contacts-links">
+            <li class="contacts-links__item">            
+              <a class="contacts-links__link" href="mailto:info@devstudio.com"
                 ><svg width="16px" height="12px"><use href="images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a
               >
             </li>
-            <li class="cnav-item">
-              <a class="contacts-button contacts-icon" href="tel:48111111111"
+            <li class="contacts-links__item">
+              <a class="contacts-links__link" href="tel:48111111111"
                 ><svg width="10px" height="16px"><use href="images/icons.svg#icon-smartphone"></use></svg>+48 111 111 111</a
               ></div>
             </li>
           </ul>
         </div>
-      </div>
     </header>
     <main>
-      <section class="background-business section">
+      <section class="service-block background-business section">
           <div class="container">
-            <div class="business-block">
-            <h1 class="your-business">
+            <div class="service-block__content">
+            <h1 class="service-block__heading">
               EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU
             </h1>
-              <button class="order-service" type="button" data-modal-open>Zamów usługe</button>
+              <button class="btn service-block__btn" type="button" data-modal-open>Zamów usługe</button>
             </div>
         </div>
         </section>
       <!-- Pierwsza sekcja-->
-      <section class="section">
+      <section class="testimonials section">
         <div class="container">
-          <ul class="lorem-position">
-            <li class="lorem-list-item">
-              <div class="lorem-background">
+          <ul class="testimonials__list lorem-list">
+            <li class="lorem-list__item">
+              <div class="lorem-list__background">
               <svg width="70px" height="70px"><use href="images/icons.svg#icon-antenna-1"></use></svg></div>
-              <p class="lorem-title">LOREM IPSUM</p>
-              <p class="lorem-text">
+              <p class="lorem-list__title">LOREM IPSUM</p>
+              <p class="lorem-list__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem-list-item">
-              <div class="lorem-background">
+            <li class="lorem-list__item">
+              <div class="lorem-list__background">
               <svg width="70px" height="70px"><use href="images/icons.svg#icon-clock-1"></use></svg></div>
-              <p class="lorem-title">LOREM IPSUM</p>
-              <p class="lorem-text">
+              <p class="lorem-list__title">LOREM IPSUM</p>
+              <p class="lorem-list__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem-list-item">
-              <div class="lorem-background">
+            <li class="lorem-list__item">
+              <div class="lorem-list__background">
               <svg width="70px" height="70px"><use href="images/icons.svg#icon-diagram-1"></use></svg></div>
-              <p class="lorem-title">LOREM IPSUM</p>
-              <p class="lorem-text">
+              <p class="lorem-list__title">LOREM IPSUM</p>
+              <p class="lorem-list__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li class="lorem-list-item">
-              <div class="lorem-background">
+            <li class="lorem-list__item">
+              <div class="lorem-list__background">
               <svg width="70px" height="70px"><use href="images/icons.svg#icon-astronaut-1"></use></svg></div>
-              <p class="lorem-title">LOREM IPSUM</p>
-              <p class="lorem-text">
+              <p class="lorem-list__title">LOREM IPSUM</p>
+              <p class="lorem-list__paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
           </ul>
         </div>
+        </section>
         <!-- czym sie zajmujemy-->
+        <section class="work-gallery section">
         <div class="container">
-          <h2 class="what-we-do">Czym się zajmujemy</h2>
-          <ul class="we-do-list">
-            <li class="we-do-item">
-              <div>
+          <h2 class="work-gallery__heading">Czym się zajmujemy</h2>
+          <ul class="work-gallery__list list-images">
+            <li class="list-images__item">
+              <div class="list-images__wrapper">
               <img
                 src="images/what_we_do/keyboard.jpg"
                 alt="work on keyboard"
                 width="370"
                 height="294"
               />
-                <p>APLIKACJE KOMPUTEROWE</p></div>
+                <p class="list-images__paragraph">APLIKACJE KOMPUTEROWE</p></div>
             </li>
-            <li class="we-do-item">
-              <div>
+            <li class="list-images__item">
+              <div class="list-images__wrapper">
               <img
                 src="images/what_we_do/telephone.jpg"
                 alt="work on telephone"
                 width="370"
                 height="294"
               />
-                <p>APLIKACJE MOBILNE</p></div>
+                <p class="list-images__paragraph">APLIKACJE MOBILNE</p></div>
             </li>
-            <li class="we-do-item">
-              <div>
+            <li class="list-images__item">
+              <div class="list-images__wrapper">
               <img
                 src="images/what_we_do/tablet.jpg"
                 alt="work on tablet"
                 width="370"
                 height="294"
               />
-                <p>ROZWIĄZANIA GRAFICZNE</p></div>
+                <p class="list-images__paragraph">ROZWIĄZANIA GRAFICZNE</p></div>
             </li>
           </ul>
         </div>
       </section>
       <!-- Nasz zespół-->
-      <div class="team-background">
-        <section class="section">
+        <section class="team-section section">
           <div class="container">
-            <h2 class="our-team">Nasz zespół</h2>
-            <ul class="team-list-items">
-              <li class="team-list-item">
+            <h2 class="team-section__heading">Nasz zespół</h2>
+            <ul class="team-section__list members-list">
+              <li class="members-list__item">
                 <img
                   src="images/our_team/photo_produkt_designer.jpg"
                   alt="John Doe produkt designer"
                   width="270"
                   height="260"
                 />
-                <h3 class="member-name">John Doe</h3>
-                <p class="job-position">Product Designer</p>
+                <h3 class="members-list__name">John Doe</h3>
+                <p class="members-list__workplace">Product Designer</p>
                 <div class="media-icon-background"><svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg></div>
@@ -175,15 +175,15 @@
                   <use href="images/icons.svg#icon-linkedin2"></use>
                 </svg></div>
               </li>
-              <li class="team-list-item">
+              <li class="members-list__item">
                 <img
                   src="images/our_team/photo_fontend_developer.jpg"
                   alt="John Doe frontend developer"
                   width="270"
     
                 />
-                <h3 class="member-name">John Doe</h3>
-                <p class="job-position">Frontend Developer</p>
+                <h3 class="members-list__name">John Doe</h3>
+                <p class="members-list__workplace">Frontend Developer</p>
                 <div class="media-icon-background"><svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg></div>
@@ -197,15 +197,15 @@
                   <use href="images/icons.svg#icon-linkedin2"></use>
                 </svg></div>
               </li>
-              <li class="team-list-item">
+              <li class="members-list__item">
                 <img
                   src="images/our_team/photo_marketing.jpg"
                   alt="John Doe marketingowiec"
                   width="270"
                   height="260"
                 />
-                <h3 class="member-name">John Doe</h3>
-                <p class="job-position">Marketing</p>
+                <h3 class="members-list__name">John Doe</h3>
+                <p class="members-list__workplace">Marketing</p>
                 <div class="media-icon-background"><svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg></div>
@@ -219,15 +219,15 @@
                   <use href="images/icons.svg#icon-linkedin2"></use>
                 </svg></div>
               </li>
-              <li class="team-list-item">
+              <li class="members-list__item">
                 <img
                   src="images/our_team/photo_UI_designer.jpg"
                   alt="John Doe UI designer"
                   width="270"
                   height="260"
                 />
-                <h3 class="member-name">John Doe</h3>
-                <p class="job-position">UI Designer</p>
+                <h3 class="members-list__name">John Doe</h3>
+                <p class="members-list__workplace">UI Designer</p>
                 <div class="media-icon-background"><svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg></div>
@@ -244,27 +244,26 @@
             </ul>
           </div>
         </section>
-      </div>
-      <section class="section">
+      <section class="clients-section section">
         <div class="container">
-          <h2 class="our-clients">Nasi klienci</h2>
-          <ul class="clients-list">
-            <li class="client-item"><svg class="border-client" width="170px" height="92px">
+          <h2 class="clients-section__heading our-clients">Nasi klienci</h2>
+          <ul class="clients-section__list clients-list">
+            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo1"></use>
             </svg></li>
-            <li class="client-item"><svg class="border-client" width="170px" height="92px">
+            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo2"></use>
             </svg></li>
-            <li class="client-item"><svg class="border-client" width="170px" height="92px">
+            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo3"></use>
             </svg></li>
-            <li class="client-item"><svg class="border-client" width="170px" height="92px">
+            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo4"></use>
             </svg></li>
-            <li class="client-item"><svg class="border-client" width="170px" height="92px">
+            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo5"></use>
             </svg></li>
-            <li class="client-item"><svg class="border-client" width="170px" height="92px">
+            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo6"></use>
             </svg></li>
           </ul>
@@ -272,31 +271,31 @@
       </section>
     </main>
     <!-- stopka -->
-    <footer class="description-below">
+    <footer class="footer-section">
       <div class="container">
-        <div class="position-below">
-          <div class="adress-container">
-        <p class="logo-below">
-          <span class="blue-part">Web</span
-          ><span class="white-part">Studio</span>
+        <div class="footer-section__content">
+          <div class="footer-section__left-area">
+        <p class="logo logo--below">
+          <span class="logo__blue-part">Web</span
+          ><span class="logo__white-part">Studio</span>
         </p>
         <address>
-          <ul class="contacts-below">
-            <li class="contact-item-below">
+          <ul class="footer-section__adress-links adress-links">
+            <li class="adress-links__item">
               <a
-                class="contact-below"
+                class="adress-links__link"
                 href="https://goo.gl/maps/ZDCwskFr5XTqsu7x7"
                 target="_blank"
                 ><span class="gps">m. Warszawa, Aleje Jerozolimskie 21</span></a
               >
             </li>
-            <li class="contact-item-below">
-              <a class="contact-below" href="mailto:info@example.com"
+            <li class="adress-links__item">
+              <a class="adress-links__link" href="mailto:info@example.com"
                 >info@example.com</a
               >
             </li>
-            <li class="contact-item-below">
-              <a class="contact-below" href="tel:48111111111"
+            <li class="adress-links__item">
+              <a class="adress-links__link" href="tel:48111111111"
                 >+48 111 111 111</a
               >
             </li>
@@ -320,7 +319,7 @@
                 </svg>
         </div>
         </div>
-        <div class="newsletter">
+        <div class="footer-section__right-area newsletter">
           <h4>ZAPISZ SIĘ DO NEWSLETTERA</h4>
           <input class="newsletter-input" name="email" placeholder="E-mail" required />
           <button type="sumbit"><div class="in-button"><span class="newsletter-btn-text">Zapisz się</span><svg width="24px" height="24px"><use href="images/icons.svg#icon-paper-plane"></use></svg></div></button>
