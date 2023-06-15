@@ -126,18 +126,23 @@ a > svg {
   justify-content: center;
   margin-top: 0px;
 }
-.service-block__btn {
-  background: #2196f3;
-  border: 1px solid #2196f3;
-  border-radius: 4px 4px 4px 4px;
-  padding: 10px 41px 10px 42px;
+.btn {
+  color: #ffffff;
   width: 200px;
   height: 50px;
-  color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid rgb(33, 150, 243);
+  background-color: #2196f3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1;
+  cursor: pointer;
+}
+.service-block__btn {
+  padding: 10px 41px 10px 42px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  cursor: pointer;
 }
 .testimonials {
   padding-bottom: 0;
@@ -323,7 +328,7 @@ a > svg {
   background: #f5f4fa;
   padding: 25px 100px;
 }
-.media-icon-background {
+.media-icon {
   fill: #afb1b8;
   background: #ffffff;
   display: inline-flex;
@@ -334,7 +339,7 @@ a > svg {
   padding: 12px;
   margin-bottom: 30px;
 }
-.media-icon-background:hover {
+.media-icon:hover {
   fill: #ffffff;
   background-color: #2196f3;
   padding: 12px;
@@ -343,7 +348,7 @@ a > svg {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.media-icon-background:focus {
+.media-icon:focus {
   fill: #ffffff;
   background: #2196f3;
   padding: 12px;
@@ -382,7 +387,7 @@ a > svg {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-icon-background {
+.media-icon--footer {
   fill: #ffffff;
   background: #ffffff1a;
   display: inline-flex;
@@ -394,12 +399,11 @@ a > svg {
   margin-bottom: 30px;
   cursor: pointer;
 }
-.footer-icon-background:hover,
-.footer-icon-background:focus {
+.media-icon--footer:hover,
+.media-icon--footer:focus {
   fill: #ffffff;
   background: #2196f3;
   padding: 12px;
-  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -408,14 +412,14 @@ a > svg {
   align-items: baseline;
   gap: 70px;
 }
-.join-us {
+.social-media__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   margin-bottom: 20px;
   color: #ffffff;
 }
-.footer-icon-background:nth-child(-n + 4) {
+.media-icon--footer:nth-child(-n + 4) {
   margin-right: 10px;
 }
 .list-images__wrapper {
@@ -550,17 +554,17 @@ a[href='portfolio.html']:hover::after {
   visibility: hidden;
   pointer-events: none;
 }
-.newsletter {
+.footer-section__form {
   margin-left: 8px;
 }
-.newsletter h4 {
+.newsletter-form__heading {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   color: #ffffff;
   margin-bottom: 20px;
 }
-.newsletter-input {
+.newsletter-form__input {
   color: #ffffff;
   width: 358px;
   height: 50px;
@@ -571,35 +575,24 @@ a[href='portfolio.html']:hover::after {
   padding-left: 16px;
   margin-right: 12px;
 }
-.newsletter-input:focus {
+.newsletter-form__input:focus {
   border: 1px solid #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .newsletter button {
-  width: 200px;
-  height: 50px;
-  border-radius: 4px;
-  border: 1px solid rgb(33, 150, 243);
-  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-.newsletter svg {
+.send-icon {
   fill: #ffffff;
 }
-.newsletter-btn-text {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.1;
-  margin-right: 24px;
-}
-.in-button {
+.btn--footer {
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  gap: 24px;
 }
 .modal {
   width: 528px;
@@ -708,24 +701,10 @@ input[type='checkbox']:checked + label svg {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.send-btn {
-  width: 200px;
-  height: 50px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-
-  color: #ffffff;
-  background-color: #2196f3;
-  border-radius: 4px;
-  border: 1px solid #2196f3;
+.btn--send {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
   text-align: center;
   letter-spacing: 0.06em;
   margin-top: 30px;
   margin-left: 25%;
-
-  cursor: pointer;
 }
