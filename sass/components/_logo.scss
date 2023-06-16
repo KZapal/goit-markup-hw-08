@@ -1,0 +1,16 @@
+.logo {
+  font-family: '$secondaryFontFamily';
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  &__blue-part {
+    color: getColor('accent');
+  }
+  &__white-part {
+    color: getColor('accentLight');
+  }
+  &__black-part {
+    color: getColor('accentDark');
+  }
+}

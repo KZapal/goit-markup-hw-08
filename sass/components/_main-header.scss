@@ -1,0 +1,25 @@
+@import './page-links';
+@import './contacts-links';
+
+.main-header {
+  border-bottom: 1px solid #ececec;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__page-links {
+    color: getColor(' primary ');
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  &__contacts-links {
+    color: getColor('secondary');
+    display: flex;
+    align-items: center;
+  }
+}

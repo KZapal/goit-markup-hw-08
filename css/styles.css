@@ -1,4 +1,4 @@
-body {
+/** body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
   font-weight: 400;
@@ -20,7 +20,7 @@ menu {
   max-width: 1200px;
   margin: 0 auto;
 }
-.main-header {
+.main-header__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +43,7 @@ a > svg {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.header-borders {
+.main-header {
   border-bottom: 1px solid #ececec;
 }
 .main-header__page-links {
@@ -66,7 +66,7 @@ a > svg {
 .page-links__link:hover,
 .contacts-links__link:hover,
 .adress-links__link:hover,
-.gps:hover {
+.adress-links__link--gps:hover {
   color: #2196f3;
   fill: #2196f3;
   transition-duration: 250ms;
@@ -75,7 +75,7 @@ a > svg {
 .page-links__link:focus,
 .contacts-links__link:focus,
 .adress-links__link:focus,
-.gps:focus {
+.adress-links__link--gps:focus {
   color: #2196f3;
   fill: #2196f3;
   transition-duration: 250ms;
@@ -213,15 +213,13 @@ a > svg {
 .footer-section {
   background-color: #2f303a;
 }
-.gps {
-  color: #ffffff;
-}
+
 .footer-section__adress-links {
   color: #757575;
   list-style: none;
 }
 .adress-links__link {
-  color: inherit;
+  color: #757575;
   text-decoration: none;
   font-style: normal;
   font-size: 14px;
@@ -231,6 +229,9 @@ a > svg {
   padding-top: 60px;
   margin-bottom: 20px;
   margin-top: 0px;
+}
+.adress-links__item {
+  color: #757575;
 }
 .adress-links__item:nth-child(-n + 2) {
   margin-bottom: 9px;
@@ -257,67 +258,42 @@ a > svg {
 .logo__black-part {
   color: #000000;
 }
-.project-categories {
+.project-cards__menu {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+  gap: 8px;
 }
-.project-categories > li:hover,
-.project-categories > li:focus {
+.project-cards__menu > li:hover,
+.project-cards__menu > li:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.category-item:nth-child(-n + 4) {
-  margin-right: 8px;
-}
-.category-button {
-  color: inherit;
-  background-color: #f5f4fa;
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  border: #f5f4fa;
-  border-radius: 4px 4px 4px 4px;
-  cursor: pointer;
-}
-.category-button:hover,
-.category-button:focus {
-  background-color: #2196f3;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  border-radius: 4px 4px 4px 4px;
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.project-name {
+.cards-tables__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
-.project-type {
+.cards-tables__type {
   color: #757575;
   font-size: 16px;
   line-height: 2;
 }
-.our-projects {
+.project-cards__tables {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
 }
-.project-item {
+.cards-tables__table {
   border: 1px solid #eeeeee;
   border-top: 0px;
   padding: 20px 24px;
   margin-top: -4px;
 }
-.our-projects > li:hover {
+.project-cards__tables > li:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition-duration: 250ms;
@@ -375,19 +351,19 @@ a > svg {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.border-client {
+.clients-list__icon {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   padding: 0px;
 }
 
-.border-client:hover,
-.border-client:focus {
+.clients-list__icon:hover,
+.clients-list__icon:focus {
   border: 1px solid #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.media-icon--footer {
+.social-media__icon {
   fill: #ffffff;
   background: #ffffff1a;
   display: inline-flex;
@@ -399,8 +375,8 @@ a > svg {
   margin-bottom: 30px;
   cursor: pointer;
 }
-.media-icon--footer:hover,
-.media-icon--footer:focus {
+.social-media__icon:hover,
+.social-media__icon:focus {
   fill: #ffffff;
   background: #2196f3;
   padding: 12px;
@@ -419,7 +395,7 @@ a > svg {
   margin-bottom: 20px;
   color: #ffffff;
 }
-.media-icon--footer:nth-child(-n + 4) {
+.social-media__icon:nth-child(-n + 4) {
   margin-right: 10px;
 }
 .list-images__wrapper {
@@ -439,10 +415,10 @@ a > svg {
   padding: 27px;
   bottom: -10px;
 }
-.project-animation > img {
+.cards-tables__img {
   position: relative;
 }
-.project-animation > p {
+.cards-tables__description {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -462,14 +438,14 @@ a > svg {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-animation:hover p,
-.project-animation:focus p {
+.cards-tables__animation:hover p,
+.cards-tables__animation:focus p {
   cursor: pointer;
   transform: translateY(0);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-animation {
+.cards-tables__animation {
   position: relative;
   overflow: hidden;
 }
@@ -495,11 +471,11 @@ a[href='portfolio.html']:hover::after {
   border-radius: 2px;
   margin-top: 28px;
 }
-.page-links__link--active,
-.active-portfolio {
+.page-links__link--active-index,
+.page-links__link--active-portfolio {
   color: #2196f3;
 }
-.page-links__link--active::after {
+.page-links__link--active-index::after {
   content: '';
   display: block;
   position: absolute;
@@ -509,7 +485,10 @@ a[href='portfolio.html']:hover::after {
   border-radius: 2px;
   margin-top: 28px;
 }
-.active-portfolio::after {
+.adress-links__link--gps {
+  color: #ffffff;
+}
+.page-links__link--active-portfolio::after {
   content: '';
   display: block;
   position: absolute;
@@ -601,7 +580,7 @@ a[href='portfolio.html']:hover::after {
 .modal-form {
   padding: 40px;
 }
-.modal-form p {
+.modal-form__heading {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.1;
@@ -609,7 +588,7 @@ a[href='portfolio.html']:hover::after {
   margin-bottom: 12px;
   margin-top: 0;
 }
-.form-item {
+.modal-form__item {
   display: flex;
   flex-direction: column;
   margin-bottom: 4px;
@@ -620,7 +599,7 @@ a[href='portfolio.html']:hover::after {
   color: #757575;
   letter-spacing: 0.01em;
 }
-.form-area {
+.modal-form__area {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   position: relative;
@@ -628,7 +607,7 @@ a[href='portfolio.html']:hover::after {
   height: 40px;
   margin-bottom: 10px;
 }
-.form-input {
+.modal-form__input {
   border: 0;
   outline: none;
   width: 100%;
@@ -636,20 +615,20 @@ a[href='portfolio.html']:hover::after {
   padding-left: 42px;
   padding-right: 12px;
 }
-.form-input:focus,
+.modal-form__input:focus,
 textarea:focus {
   border: 1px solid #2196f3;
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-icon {
+.modal-form__icon {
   position: absolute;
   left: 0;
   margin: 11px 12px;
   fill: #212121;
 }
-.form-input:focus + .form-icon {
+.modal-form__input:focus + .modal-form__icon {
   fill: #2196f3;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -667,7 +646,7 @@ textarea {
   padding: 12px 16px;
   margin-bottom: 20px;
 }
-.checkbox {
+.modal-form__checkbox {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -677,7 +656,7 @@ textarea {
   display: flex;
   justify-content: center;
 }
-.checkbox a {
+.modal-form__checkbox a {
   color: #2196f3;
 }
 input[type='checkbox'] {
@@ -701,10 +680,31 @@ input[type='checkbox']:checked + label svg {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn--send {
+.modal-form__btn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   text-align: center;
   letter-spacing: 0.06em;
   margin-top: 30px;
   margin-left: 25%;
+}
+.project-cards__btn {
+  width: 121px;
+  height: 38px;
+  color: inherit;
+  background-color: #f5f4fa;
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.6;
+  border: #f5f4fa;
+  cursor: pointer;
+}
+.project-cards__btn:hover,
+.project-cards__btn:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: 1.6;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

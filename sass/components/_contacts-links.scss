@@ -1,0 +1,27 @@
+.contacts-links {
+  &__item {
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+  &__link {
+    color: inherit;
+    display: flex;
+    align-items: center;
+    fill: getColor('secondary');
+  }
+  &__link:hover {
+    color: getColor('accent');
+    fill: getColor('accent');
+    transition: '$trans';
+  }
+  &__link:focus {
+    color: getColor('accent');
+    fill: getColor('accent');
+    transition: '$trans';
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}

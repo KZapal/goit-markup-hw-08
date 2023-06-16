@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/main.min.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,9 +20,9 @@
   </head>
   <body>
     <!-- Nagłowek i nawigacja-->
-    <header class="header-borders">
+    <header class="main-header">
       <div class="container">
-        <div class="main-header">
+        <div class="main-header__content">
           <nav>
             <menu class="main-header__page-links page-links">
               <li class="page-links__item">
@@ -32,7 +32,7 @@
                 >
               </li>
               <li class="page-links__item">
-                <a class="page-links__link page-links__link--active" href="index.html">Agencja</a>
+                <a class="page-links__link page-links__link--active-index" href="index.html">Agencja</a>
               </li>
               <li class="page-links__item">
                 <a class="page-links__link" href="portfolio.html">Portfolio</a>
@@ -45,19 +45,19 @@
           <ul class="main-header__contacts-links contacts-links">
             <li class="contacts-links__item">            
               <a class="contacts-links__link" href="mailto:info@devstudio.com"
-                ><svg width="16px" height="12px"><use href="images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a
+                ><svg class="contacts-links__icon" width="16px" height="12px"><use href="images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a
               >
             </li>
             <li class="contacts-links__item">
               <a class="contacts-links__link" href="tel:48111111111"
-                ><svg width="10px" height="16px"><use href="images/icons.svg#icon-smartphone"></use></svg>+48 111 111 111</a
+                ><svg class="contacts-links__icon" width="10px" height="16px"><use href="images/icons.svg#icon-smartphone"></use></svg>+48 111 111 111</a
               ></div>
             </li>
           </ul>
         </div>
     </header>
     <main>
-      <section class="service-block background-business section">
+      <section class="service-block section">
           <div class="container">
             <div class="service-block__content">
             <h1 class="service-block__heading">
@@ -246,24 +246,24 @@
         </section>
       <section class="clients-section section">
         <div class="container">
-          <h2 class="clients-section__heading our-clients">Nasi klienci</h2>
+          <h2 class="clients-section__heading">Nasi klienci</h2>
           <ul class="clients-section__list clients-list">
-            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
+            <li class="clients-list__item"><svg class="clients-list__icon" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo1"></use>
             </svg></li>
-            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
+            <li class="clients-list__item"><svg class="clients-list__icon" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo2"></use>
             </svg></li>
-            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
+            <li class="clients-list__item"><svg class="clients-list__icon" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo3"></use>
             </svg></li>
-            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
+            <li class="clients-list__item"><svg class="clients-list__icon" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo4"></use>
             </svg></li>
-            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
+            <li class="clients-list__item"><svg class="clients-list__icon" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo5"></use>
             </svg></li>
-            <li class="clients-list__item"><svg class="border-client" width="170px" height="92px">
+            <li class="clients-list__item"><svg class="clients-list__icon" width="170px" height="92px">
               <use href="images/icons.svg#icon-Logo6"></use>
             </svg></li>
           </ul>
@@ -286,7 +286,7 @@
                 class="adress-links__link"
                 href="https://goo.gl/maps/ZDCwskFr5XTqsu7x7"
                 target="_blank"
-                ><span class="gps">m. Warszawa, Aleje Jerozolimskie 21</span></a
+                ><span class="adress-links__link adress-links__link--gps">m. Warszawa, Aleje Jerozolimskie 21</span></a
               >
             </li>
             <li class="adress-links__item">
@@ -304,17 +304,17 @@
         </div>
         <div class="footer-section__social-media social-media">
           <h3 class="social-media__heading">DOŁĄCZ DO NAS</h3>
-          <div class="media-icon--footer">
+          <div class="social-media__icon">
           <svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-instagram"></use>
                 </svg></div>
-                <div class="media-icon--footer"><svg width="20px" height="20px">
+                <div class="social-media__icon"><svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-twitter"></use>
                 </svg></div>
-                <div class="media-icon--footer"><svg width="20px" height="20px">
+                <div class="social-media__icon"><svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-facebook"></use>
                 </svg></div>
-                <div class="media-icon--footer"><svg width="20px" height="20px">
+                <div class="social-media__icon"><svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-linkedin2"></use>
                 </svg>
         </div>
@@ -329,34 +329,34 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close" data-modal-close>x</button>
-        <form class="modal-form">
-          <p>Zostaw swoje dane w formularzu poniżej</p>
-          <label class="form-item" for="name">Imie</label>
-            <div class="form-area">
-              <input class="form-input" type="text" name="name" id="name"/>
-              <svg class="form-icon" width="18px" height="18px">
+        <form class="modal__form modal-form">
+          <h3 class="modal-form__heading">Zostaw swoje dane w formularzu poniżej</h3>
+          <label class="modal-form__item" for="name">Imie</label>
+            <div class="modal-form__area">
+              <input class="modal-form__input" type="text" name="name" id="name"/>
+              <svg class="modal-form__icon" width="18px" height="18px">
                 <use href="images/icons.svg#icon-person">
                 </use>
               </svg>
             </div>
-          <label class="form-item" for="phone-number">Telefon</label>
-            <div class="form-area">
-              <input class="form-input" type="tel" name="phone-number" id="phone-number" />
-              <svg class="form-icon" width="18px" height="18px">
+          <label class="modal-form__item" for="phone-number">Telefon</label>
+            <div class="modal-form__area">
+              <input class="modal-form__input" type="tel" name="phone-number" id="phone-number" />
+              <svg class="modal-form__icon" width="18px" height="18px">
                 <use href="images/icons.svg#icon-phone">
                 </use>
               </svg>
             </div>
-          <label class="form-item" for="email">E-mail
-            <div class="form-area"><input class="form-input" type="email" name="email" id="email"/>
-            <svg class="form-icon" width="18px" height="18px"><use href="images/icons.svg#icon-email"></use></svg></div>
-            <label class="form-item" for="comment">Komentarz</label>
+          <label class="modal-form__item" for="email">E-mail
+            <div class="modal-form__area"><input class="modal-form__input" type="email" name="email" id="email"/>
+            <svg class="modal-form__icon" width="18px" height="18px"><use href="images/icons.svg#icon-email"></use></svg></div>
+            <label class="modal-form__item" for="comment">Komentarz</label>
               <textarea class="comment-area" name="comment" id="comment" placeholder="Wprowadź tekst" rows="4"></textarea>
-            <div class="checkbox"><input type="checkbox" name="agreement" id="agreement"/><label for="agreement"><svg width="16px" height="15px">
+            <div class="modal-form__checkbox checkbox"><input type="checkbox" name="agreement" id="agreement"/><label for="agreement"><svg width="16px" height="15px">
                 <use href="images/icons.svg#icon-checkmark">
                 </use>
               </svg>Oświadczam iż akceptuję <a href="/">Regulamin</a> i <a href="/">Politykę Prywatności.</a></label></div>
-            <button class="btn btn--send" type="submit">Wyślij</button>
+            <button class="btn modal-form__btn" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
