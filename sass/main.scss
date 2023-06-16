@@ -1,6 +1,8 @@
 @import 'utils/vars';
 @import './components/_global-styles.scss';
-@import './components/sections';
-@import './components/containers';
-@import './components/main-header';
-@import './components/logo';
+@import './components/_main-header';
+@import './components/_logo';
+@import './components/_service-block';
+@import './components/_btn.scss';
+@import './components/_testimonials';
+@import './components/work-gallery';

@@ -13,13 +13,13 @@
     color: inherit;
     font-size: 14px;
     line-height: 1.1;
-    font-weight: 500;
+    font-weight: $MediumFontWeight;
   }
   &__link:hover,
   &__link:focus {
     color: getColor('accent');
     fill: getColor('accent');
-    transition: '$trans';
+    transition: $trans;
   }
   &__link--active-index {
     color: getColor('accent');

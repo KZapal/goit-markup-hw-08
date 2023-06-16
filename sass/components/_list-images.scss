@@ -1,0 +1,22 @@
+.list-images {
+  &__item:nth-child(-n + 2) {
+    margin-right: 30px;
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__paragraph {
+    color: getColor('accentLight');
+    background: #2f303acc;
+    width: 370px;
+    height: 70px;
+    font-weight: $BigFontWeight;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    position: absolute;
+    text-align: center;
+    padding: 27px;
+    bottom: -10px;
+  }
+}

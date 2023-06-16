@@ -1,0 +1,15 @@
+@import './list-images';
+
+.work-gallery {
+  &__heading {
+    font-weight: $BigFontWeight;
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0 auto;
+  }
+}

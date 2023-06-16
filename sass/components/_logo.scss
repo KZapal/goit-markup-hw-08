@@ -1,8 +1,8 @@
 .logo {
-  font-family: '$secondaryFontFamily';
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: $BigFontWeight;
 
   &__blue-part {
     color: getColor('accent');

@@ -5,21 +5,19 @@
   border-bottom: 1px solid #ececec;
 
   &__content {
-    display: flex;
-    align-items: center;
+    @include flex;
     justify-content: space-between;
+    font-weight: 500;
   }
 
   &__page-links {
     color: getColor(' primary ');
-    display: flex;
-    align-items: center;
+    @include flex;
     margin: 0;
     padding: 0;
   }
   &__contacts-links {
     color: getColor('secondary');
-    display: flex;
-    align-items: center;
+    @include flex;
   }
 }

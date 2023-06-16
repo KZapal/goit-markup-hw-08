@@ -10,6 +10,15 @@ $colors: (
   @return map-get($colors, $key);
 }
 
-$primaryFontFamily: 'Roboto', sans-serif;
-$secondaryFontFamily: 'Raleway', sans-serif;
+$FontFamily: 'Roboto', sans-serif;
+$BigBFontWeight: 900;
+$BigFontWeight: 700;
+$MediumFontWeight: 500;
+$SmallFontWeight: 400;
 $trans: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+@mixin flex($direction: row, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+}

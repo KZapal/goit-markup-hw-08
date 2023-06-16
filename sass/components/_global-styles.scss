@@ -1,7 +1,10 @@
+@import './containers';
+@import './sections';
+
 body {
-  font-family: '$primaryFontFamily';
+  font-family: $FontFamily;
   color: getColor(' primary ');
-  font-weight: 400;
+  font-weight: $SmallFontWeight;
 }
 
 ul,

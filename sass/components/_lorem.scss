@@ -1,0 +1,20 @@
+.lorem-list {
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  &__background {
+    background: getColor('third');
+    padding: 25px 100px;
+  }
+  &__title {
+    font-weight: $BigFontWeight;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+  &__paragraph {
+    color: getColor('secondary');
+    font-size: 14px;
+    line-height: 1, 5;
+    margin: 10px auto;
+  }
+}

@@ -1,4 +1,4 @@
-/** body {
+body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
   font-weight: 400;
@@ -172,7 +172,7 @@ a > svg {
   margin-bottom: 50px;
   margin-top: 94px;
 }
-.work-gallery__list {
+.work-gallery {
   display: flex;
   justify-content: space-between;
   margin-left: 0 auto;
