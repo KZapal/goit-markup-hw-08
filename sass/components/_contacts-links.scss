@@ -9,17 +9,12 @@
     @include flex;
     fill: getColor('secondary');
   }
-  &__link:hover {
+  &__link:hover,
+  &__link:focus {
     color: getColor('accent');
     fill: getColor('accent');
     transition: '$trans';
   }
-  &__link:focus {
-    color: getColor('accent');
-    fill: getColor('accent');
-    transition: $trans;
-  }
-
   &__icon {
     margin-right: 10px;
   }

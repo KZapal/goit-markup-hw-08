@@ -210,11 +210,11 @@ a > svg {
   font-size: 16px;
   line-height: 1.2;
 }
-.footer-section {
+.main-footer {
   background-color: #2f303a;
 }
 
-.footer-section__adress-links {
+.main-footer__adress-links {
   color: #757575;
   list-style: none;
 }
@@ -304,7 +304,7 @@ a > svg {
   background: #f5f4fa;
   padding: 25px 100px;
 }
-.media-icon {
+.members-list__media-icon {
   fill: #afb1b8;
   background: #ffffff;
   display: inline-flex;
@@ -383,7 +383,7 @@ a > svg {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-section__content {
+.main-footer__content {
   display: flex;
   align-items: baseline;
   gap: 70px;
@@ -533,7 +533,7 @@ a[href='portfolio.html']:hover::after {
   visibility: hidden;
   pointer-events: none;
 }
-.footer-section__form {
+.main-footer__form {
   margin-left: 8px;
 }
 .newsletter-form__heading {
@@ -566,7 +566,7 @@ a[href='portfolio.html']:hover::after {
 .send-icon {
   fill: #ffffff;
 }
-.btn--footer {
+.main-footer__btn {
   display: flex;
   align-items: center;
   text-align: center;

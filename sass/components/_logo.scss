@@ -1,6 +1,6 @@
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
+  font-size: $GreaterFontSize + 10px;
   line-height: 1.2;
   font-weight: $BigFontWeight;
 
@@ -12,5 +12,10 @@
   }
   &__black-part {
     color: getColor('accentDark');
+  }
+  &--below {
+    padding-top: 60px;
+    margin-bottom: 20px;
+    margin-top: 0px;
   }
 }

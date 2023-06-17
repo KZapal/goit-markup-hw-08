@@ -1,0 +1,16 @@
+@import './adress-links';
+@import './social-media';
+@import './newsletter-form';
+
+.main-footer {
+  background-color: #2f303a;
+
+  &__content {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+  }
+  &__form {
+    margin-left: 8px;
+  }
+}

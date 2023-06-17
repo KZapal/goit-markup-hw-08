@@ -8,12 +8,12 @@
   }
   &__title {
     font-weight: $BigFontWeight;
-    font-size: 14px;
+    font-size: $RegularFontSize;
     line-height: 1.1;
   }
   &__paragraph {
     color: getColor('secondary');
-    font-size: 14px;
+    font-size: $RegularFontSize;
     line-height: 1, 5;
     margin: 10px auto;
   }

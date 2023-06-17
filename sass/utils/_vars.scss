@@ -4,6 +4,7 @@ $colors: (
   'third': #f5f4fa,
   'accent': #2196f3,
   'accentLight': #ffffff,
+  'accentMedium': #afb1b8,
   'accentDark': #000000,
 );
 @function getColor($key) {
@@ -15,10 +16,22 @@ $BigBFontWeight: 900;
 $BigFontWeight: 700;
 $MediumFontWeight: 500;
 $SmallFontWeight: 400;
+$RegularFontSize: 14px;
+$GreaterFontSize: 16px;
 $trans: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 @mixin flex($direction: row, $align: center) {
   display: flex;
   flex-direction: $direction;
   align-items: $align;
+}
+
+@mixin mediaiconhovfoc(
+  $fill: getColor('accentLight'),
+  $bgcolor: getColor('accent'),
+  $transition: $trans
+) {
+  fill: $fill;
+  background-color: $bgcolor;
+  transition: $transition;
 }

@@ -1,11 +1,11 @@
 @import './list-images';
 
 .work-gallery {
+  padding-top: 0;
+
   &__heading {
-    font-weight: $BigFontWeight;
-    font-size: 36px;
-    line-height: 1.7;
-    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 94px;
   }
   &__list {
     display: flex;

@@ -1,0 +1,20 @@
+.clients-list {
+  &__item {
+    fill: getColor('accentMedium');
+  }
+  &__item:hover,
+  &__item:focus {
+    fill: getColor('accent');
+    transition: $trans;
+  }
+  &__icon {
+    border: 1px solid getColor('accentMedium');
+    border-radius: 4px;
+    padding: 0px;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    border: 1px solid getColor('accent');
+    transition: $trans;
+  }
+}

@@ -6,7 +6,7 @@
   border: 1px solid getColor('accent');
   background-color: getColor('accent');
   font-weight: $BigFontWeight;
-  font-size: 16px;
+  font-size: $GreaterFontSize;
   line-height: 1.1;
   cursor: pointer;
 }

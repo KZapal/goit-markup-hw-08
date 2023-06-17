@@ -7,7 +7,7 @@
   &__content {
     @include flex;
     justify-content: space-between;
-    font-weight: 500;
+    font-weight: $MediumFontWeight;
   }
 
   &__page-links {

@@ -1,0 +1,35 @@
+.members-list {
+  &__item {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
+      0px 2px 1px #00000033;
+    background: getColor('accentLight');
+  }
+  &__name {
+    font-weight: $MediumFontWeight;
+    font-size: $GreaterFontSize;
+    line-height: 1.2;
+  }
+  &__workplace {
+    color: getColor('secondary');
+    font-size: $GreaterFontSize;
+    line-height: 1.2;
+  }
+  &__media-icon {
+    fill: getColor('accentMedium');
+    background: getColor('accentLight');
+    display: inline-flex;
+    gap: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  &__media-icon:hover,
+  &__media-icon:focus {
+    @include mediaiconhovfoc;
+    padding: 12px;
+  }
+}

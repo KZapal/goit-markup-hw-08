@@ -1,0 +1,24 @@
+.social-media {
+  &__heading {
+    font-weight: $BigFontWeight;
+    font-size: $RegularFontSize;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: getColor(accentLight);
+  }
+  &__icon {
+    fill: getColor('accentLight');
+    background: #ffffff1a;
+    display: inline-flex;
+    gap: 10px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 12px;
+    margin-bottom: 30px;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    @include mediaiconhovfoc;
+  }
+}

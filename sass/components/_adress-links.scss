@@ -1,0 +1,21 @@
+.adress-links {
+  &__item:nth-child(-n + 2) {
+    margin-bottom: 9px;
+  }
+  &__item:last-child {
+    padding-bottom: 60px;
+  }
+  &__link {
+    color: getColor('secondary');
+  }
+  &__link--gps {
+    color: getColor('accentLight');
+  }
+  &__link:hover,
+  &__link:focus,
+  &__link--gps:hover,
+  &__link--gps:focus {
+    color: getColor('accent');
+    transition: $trans;
+  }
+}

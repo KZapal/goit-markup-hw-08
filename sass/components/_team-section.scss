@@ -1,0 +1,17 @@
+@import './members-lists';
+
+.team-section {
+  background: getColor('third');
+
+  &__heading {
+    margin-bottom: 49px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0px;
+    text-align: center;
+  }
+}
