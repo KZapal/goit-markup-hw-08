@@ -304,6 +304,7 @@
         </div>
         <div class="main-footer__social-media social-media">
           <h3 class="social-media__heading">DOŁĄCZ DO NAS</h3>
+          <div class="social-media__icons">
           <div class="social-media__icon">
           <svg width="20px" height="20px">
                   <use href="images/icons.svg#icon-instagram"></use>
@@ -319,6 +320,7 @@
                 </svg>
         </div>
         </div>
+        </div>
         <div class="main-footer__form newsletter-form">
           <h4 class="newsletter-form__heading">ZAPISZ SIĘ DO NEWSLETTERA</h4>
           <input class="newsletter-form__input" name="email" placeholder="E-mail" required />
@@ -328,7 +330,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close" data-modal-close>x</button>
+        <button type="button" class="modal__close-btn" data-modal-close>x</button>
         <form class="modal__form modal-form">
           <h3 class="modal-form__heading">Zostaw swoje dane w formularzu poniżej</h3>
           <label class="modal-form__item" for="name">Imie</label>
@@ -347,16 +349,16 @@
                 </use>
               </svg>
             </div>
-          <label class="modal-form__item" for="email">E-mail
+          <label class="modal-form__item" for="email">E-mail</label>
             <div class="modal-form__area"><input class="modal-form__input" type="email" name="email" id="email"/>
             <svg class="modal-form__icon" width="18px" height="18px"><use href="images/icons.svg#icon-email"></use></svg></div>
             <label class="modal-form__item" for="comment">Komentarz</label>
-              <textarea class="comment-area" name="comment" id="comment" placeholder="Wprowadź tekst" rows="4"></textarea>
-            <div class="modal-form__checkbox checkbox"><input type="checkbox" name="agreement" id="agreement"/><label for="agreement"><svg width="16px" height="15px">
+              <textarea class="modal-form__area modal-form__area--comment" name="comment" id="comment" placeholder="Wprowadź tekst" rows="4"></textarea>
+            <div class="modal-form__checkbox"><input class="modal-form__input-checkbox" type="checkbox" name="agreement" id="agreement"/><label for="agreement"><svg width="16px" height="15px">
                 <use href="images/icons.svg#icon-checkmark">
                 </use>
               </svg>Oświadczam iż akceptuję <a href="/">Regulamin</a> i <a href="/">Politykę Prywatności.</a></label></div>
-            <button class="btn modal-form__btn" type="submit">Wyślij</button>
+            <button class="btn modal-form__btn-send" type="submit">Wyślij</button>
         </form>
       </div>
     </div>

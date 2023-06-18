@@ -1,9 +1,11 @@
 .adress-links {
+  margin-bottom: 0;
+  padding-bottom: 60px;
+  &__item {
+    font-size: $RegularFontSize;
+  }
   &__item:nth-child(-n + 2) {
     margin-bottom: 9px;
-  }
-  &__item:last-child {
-    padding-bottom: 60px;
   }
   &__link {
     color: getColor('secondary');

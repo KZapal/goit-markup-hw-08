@@ -23,15 +23,30 @@
   }
   &__link--active-index {
     color: getColor('accent');
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 54px;
+      height: 4px;
+      background-color: getColor('accent');
+      border-radius: 2px;
+      margin-top: 28px;
+    }
   }
-  &__link--active-index:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 54px;
-    height: 4px;
-    background-color: #2196f3;
-    border-radius: 2px;
-    margin-top: 28px;
+  &__link--active-portfolio {
+    color: getColor('accent');
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 58px;
+      height: 4px;
+      background-color: getColor('accent');
+      border-radius: 2px;
+      margin-top: 28px;
+    }
   }
 }

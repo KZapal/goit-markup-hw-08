@@ -6,11 +6,13 @@
     margin-bottom: 20px;
     color: getColor(accentLight);
   }
+  &__icons {
+    display: inline-flex;
+    gap: 10px;
+  }
   &__icon {
     fill: getColor('accentLight');
     background: #ffffff1a;
-    display: inline-flex;
-    gap: 10px;
     width: 44px;
     height: 44px;
     border-radius: 50%;

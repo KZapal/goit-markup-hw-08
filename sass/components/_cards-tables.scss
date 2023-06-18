@@ -1,0 +1,49 @@
+.cards-tables {
+  &__animation {
+    position: relative;
+    overflow: hidden;
+
+    &:hover p,
+    &:focus p {
+      cursor: pointer;
+      transform: translateY(0);
+      transition: $trans;
+    }
+  }
+  &__img {
+    position: relative;
+  }
+  &__description {
+    font-size: $GreaterFontSize + 2px;
+    line-height: 1.5;
+    color: getColor('accentLight');
+    background: getColor('accent');
+    text-align: left;
+    padding: 49px 45px 49px 24px;
+    margin: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(+110%);
+    transition: $trans;
+  }
+  &__table {
+    border: 1px solid getColor('third');
+    border-top: 0px;
+    padding: 20px 24px;
+    margin-top: -4px;
+  }
+  &__name {
+    font-weight: $BigFontWeight;
+    font-size: $GreaterFontSize + 2px;
+    line-height: 2;
+  }
+  &__type {
+    color: getColor('secondary');
+    font-size: $GreaterFontSize;
+    line-height: 2;
+  }
+}
