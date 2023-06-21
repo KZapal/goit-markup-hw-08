@@ -3,12 +3,12 @@
 .clients-section {
   &__heading {
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   &__list {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    flex-flow: row-reverse wrap-reverse;
+    gap: 30px;
     cursor: pointer;
   }
 }

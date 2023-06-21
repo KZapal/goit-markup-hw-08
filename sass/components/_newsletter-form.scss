@@ -4,6 +4,7 @@
     font-size: $RegularFontSize;
     line-height: 1.1;
     margin-bottom: 20px;
+    margin-top: 0;
     color: getColor(accentLight);
   }
   &__input {
@@ -15,7 +16,7 @@
     outline: none;
     background-color: inherit;
     padding-left: 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
   }
   &__input:focus {
     border: 1px solid getColor('accent');

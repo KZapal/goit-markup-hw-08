@@ -7,15 +7,19 @@
 
   &__content {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    text-align: center;
+    gap: 60px;
   }
   &__adress-links {
-    margin-right: 70px;
+    padding: 0;
   }
   &__social-media {
     gap: 10px;
   }
   &__form {
-    margin-left: 78px;
+    padding-top: 0;
   }
 }

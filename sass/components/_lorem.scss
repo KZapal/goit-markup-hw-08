@@ -4,17 +4,18 @@
   }
   &__background {
     background: getColor('third');
-    padding: 25px 100px;
+    padding: 25px 190px;
   }
   &__title {
     font-weight: $BigFontWeight;
     font-size: $RegularFontSize;
     line-height: 1.1;
+    text-align: center;
   }
   &__paragraph {
     color: getColor('secondary');
     font-size: $RegularFontSize;
-    line-height: 1, 5;
+    line-height: 1.7;
     margin: 10px auto;
   }
 }

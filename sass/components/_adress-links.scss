@@ -5,7 +5,7 @@
     font-size: $RegularFontSize;
   }
   &__item:nth-child(-n + 2) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
   &__link {
     color: getColor('secondary');

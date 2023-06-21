@@ -1,13 +1,10 @@
 @import './lorem';
 
 .testimonials {
-  padding-bottom: 0;
-
   &__list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 30px;
     padding: 0px;
-    align-content: space-between;
   }
 }

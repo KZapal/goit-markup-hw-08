@@ -4,12 +4,12 @@
   background: getColor('third');
 
   &__heading {
-    margin-bottom: 49px;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
   &__list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 30px;
     padding: 0px;
     text-align: center;
