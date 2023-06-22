@@ -1,21 +1,23 @@
-.lorem-list {
-  &__item {
-    flex-basis: calc((100% - 90px) / 4);
-  }
-  &__background {
-    background: getColor('third');
-    padding: 25px 190px;
-  }
-  &__title {
-    font-weight: $BigFontWeight;
-    font-size: $RegularFontSize;
-    line-height: 1.1;
-    text-align: center;
-  }
-  &__paragraph {
-    color: getColor('secondary');
-    font-size: $RegularFontSize;
-    line-height: 1.7;
-    margin: 10px auto;
+@media (max-width: 767px) {
+  .lorem-list {
+    &__item {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+    &__background {
+      background: getColor('third');
+      padding: 25px 190px;
+    }
+    &__title {
+      font-weight: $BigFontWeight;
+      font-size: $RegularFontSize;
+      line-height: 1.1;
+      text-align: center;
+    }
+    &__paragraph {
+      color: getColor('secondary');
+      font-size: $RegularFontSize;
+      line-height: 1.7;
+      margin: 10px auto;
+    }
   }
 }

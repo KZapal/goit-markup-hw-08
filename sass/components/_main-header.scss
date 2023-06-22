@@ -1,7 +1,7 @@
 @import './page-links';
 @import './contacts-links';
 
-.main-header {
+/** .main-header {
   border-bottom: 1px solid #ececec;
 
   &__content {
@@ -19,5 +19,27 @@
   &__contacts-links {
     color: getColor('secondary');
     @include flex;
+  }
+} **/
+@media (max-width: 767px) {
+  .main-header {
+    &__content {
+      @include flex;
+      justify-content: space-between;
+    }
+    &__contacts-links {
+      display: none;
+    }
+    &__menu-button {
+      padding: 0;
+      border: 0;
+      background: getColor('accentLight');
+      margin: 10px;
+      &:focus,
+      &:hover {
+        fill: getColor('accent');
+        transition: $trans;
+      }
+    }
   }
 }

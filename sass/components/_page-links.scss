@@ -1,4 +1,14 @@
-.page-links {
+@media (max-width: 767px) {
+  .page-links {
+    &__item {
+      &:not(:first-child) {
+        display: none;
+      }
+    }
+  }
+}
+
+/** .page-links {
   &__item {
     &:first-child {
       padding-top: 24px;
@@ -49,4 +59,4 @@
       margin-top: 28px;
     }
   }
-}
+} **/
