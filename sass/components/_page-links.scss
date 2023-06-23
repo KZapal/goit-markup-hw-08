@@ -1,24 +1,4 @@
-@media (max-width: 767px) {
-  .page-links {
-    &__item {
-      &:not(:first-child) {
-        display: none;
-      }
-    }
-  }
-}
-
-/** .page-links {
-  &__item {
-    &:first-child {
-      padding-top: 24px;
-      padding-bottom: 25px;
-      margin-right: 93px;
-    }
-    &:nth-child(n + 2) {
-      margin-right: 46px;
-    }
-  }
+.page-links {
   &__link {
     color: inherit;
     font-size: $RegularFontSize;
@@ -59,4 +39,29 @@
       margin-top: 28px;
     }
   }
-} **/
+}
+
+@media (max-width: 767px) {
+  .page-links {
+    &__item {
+      &:not(:first-child) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .page-links {
+    &__item {
+      &:first-child {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        margin-right: 83px;
+      }
+      &:nth-child(n + 2) {
+        margin-right: 60px;
+      }
+    }
+  }
+}

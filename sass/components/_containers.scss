@@ -2,3 +2,10 @@
   max-width: 450px;
   margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 738px;
+    margin: 0 auto;
+  }
+}

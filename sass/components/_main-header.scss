@@ -1,13 +1,10 @@
 @import './page-links';
 @import './contacts-links';
 
-/** .main-header {
-  border-bottom: 1px solid #ececec;
-
+.main-header {
   &__content {
     @include flex;
     justify-content: space-between;
-    font-weight: $MediumFontWeight;
   }
 
   &__page-links {
@@ -20,17 +17,14 @@
     color: getColor('secondary');
     @include flex;
   }
-} **/
+}
+
 @media (max-width: 767px) {
   .main-header {
-    &__content {
-      @include flex;
-      justify-content: space-between;
-    }
     &__contacts-links {
       display: none;
     }
-    &__menu-button {
+    &__menu-toggle {
       padding: 0;
       border: 0;
       background: getColor('accentLight');
@@ -40,6 +34,21 @@
         fill: getColor('accent');
         transition: $trans;
       }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header {
+    border-bottom: 1px solid #ececec;
+
+    &__contacts-links {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 10px;
+    }
+    &__menu-toggle {
+      display: none;
     }
   }
 }

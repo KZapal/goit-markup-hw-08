@@ -1,12 +1,6 @@
-/** .contacts-links {
-  &__item {
-    &:first-child {
-      margin-right: 30px;
-    }
-  }
+.contacts-links {
   &__link {
     color: inherit;
-    @include flex;
     fill: getColor('secondary');
   }
   &__link:hover,
@@ -15,7 +9,16 @@
     fill: getColor('accent');
     transition: '$trans';
   }
-  &__icon {
-    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .contacts-links {
+    font-size: $RegularFontSize - 2px;
+    font-weight: $MediumFontWeight;
+    letter-spacing: 0.24px;
+
+    &__icon {
+      margin-right: 8px;
+    }
   }
-} **/
+}
