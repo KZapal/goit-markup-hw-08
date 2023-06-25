@@ -33,3 +33,17 @@
     padding: 12px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .members-list {
+    &__item {
+      min-width: 354px;
+      min-height: 536px;
+
+      & img {
+        width: 354px;
+        height: 374px;
+      }
+    }
+  }
+}

@@ -10,11 +10,20 @@
   &__icon {
     border: 1px solid getColor('accentMedium');
     border-radius: 4px;
+    width: 210px;
     padding: 0px;
   }
   &__icon:hover,
   &__icon:focus {
     border: 1px solid getColor('accent');
     transition: $trans;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .clients-list {
+    &__icon {
+      width: 226px;
+    }
   }
 }

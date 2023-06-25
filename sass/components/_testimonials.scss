@@ -1,12 +1,31 @@
 @import './lorem';
 
-@media (max-width: 767px) {
+.testimonials {
+  padding-bottom: 0;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
   .testimonials {
+    padding-bottom: 45px;
     &__list {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      padding: 0px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .testimonials {
+    padding-bottom: 94px;
+    &__list {
+      flex-direction: row;
+      align-content: space-between;
     }
   }
 }
