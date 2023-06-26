@@ -21,3 +21,11 @@
     transition: $trans;
   }
 }
+
+@media (min-width: 1200px) {
+  .adress-links {
+    &__item:nth-child(-n + 2) {
+      margin-bottom: 9px;
+    }
+  }
+}

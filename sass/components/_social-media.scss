@@ -26,3 +26,12 @@
     @include mediaiconhovfoc;
   }
 }
+
+@media (min-width: 1200px) {
+  .social-media {
+    &__icons {
+      display: inline-flex;
+      gap: 10px;
+    }
+  }
+}

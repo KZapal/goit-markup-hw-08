@@ -22,3 +22,21 @@
     }
   }
 }
+
+@media (min-width: 1199px) {
+  .contacts-links {
+    font-size: $RegularFontSize;
+    letter-spacing: 0.028px;
+    &__item {
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
+    &__link {
+      @include flex;
+    }
+    &__icon {
+      margin-right: 10px;
+    }
+  }
+}

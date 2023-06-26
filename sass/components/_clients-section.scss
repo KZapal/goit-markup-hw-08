@@ -12,3 +12,17 @@
     cursor: pointer;
   }
 }
+
+@media (min-width: 1200px) {
+  .clients-section {
+    &__heading {
+      margin-bottom: 50px;
+    }
+    &__list {
+      display: flex;
+      flex-flow: row-reverse nowrap;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+  }
+}

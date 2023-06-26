@@ -24,3 +24,16 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .team-section {
+    &__heading {
+      margin-bottom: 49px;
+    }
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

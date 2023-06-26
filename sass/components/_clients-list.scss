@@ -27,3 +27,11 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .clients-list {
+    &__icon {
+      width: 170px;
+    }
+  }
+}

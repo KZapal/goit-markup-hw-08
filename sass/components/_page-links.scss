@@ -51,7 +51,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .page-links {
     &__item {
       &:first-child {
@@ -61,6 +61,21 @@
       }
       &:nth-child(n + 2) {
         margin-right: 60px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-links {
+    &__item {
+      &:first-child {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+      }
+      &:nth-child(n + 2) {
+        margin-right: 46px;
       }
     }
   }

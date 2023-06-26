@@ -40,3 +40,12 @@
     flex-direction: column;
   }
 }
+
+@media (min-width: 1200px) {
+  .newsletter-form {
+    &__input {
+      width: 358px;
+      margin-right: 12px;
+    }
+  }
+}
