@@ -8,6 +8,7 @@
   &__list {
     display: flex;
     flex-flow: row-reverse wrap-reverse;
+    justify-content: center;
     gap: 30px;
     cursor: pointer;
   }
