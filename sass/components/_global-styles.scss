@@ -5,6 +5,7 @@ body {
   font-family: $FontFamily;
   color: getColor(' primary ');
   font-weight: $SmallFontWeight;
+  overflow-y: hidden;
 }
 
 ul,

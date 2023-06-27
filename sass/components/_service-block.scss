@@ -1,6 +1,5 @@
 .service-block {
   max-width: 767px;
-  min-width: 480px;
   height: 400px;
   background-image: linear-gradient(#2f303a66, #2f303a66),
     url(/images/effective_solutions/people_at_work.jpg);
@@ -40,7 +39,6 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .service-block {
     max-width: 1199px;
-    min-width: 768px;
 
     &__heading {
       letter-spacing: 1.56px;
@@ -50,7 +48,6 @@
 
 @media (min-width: 1200px) {
   .service-block {
-    min-width: 1200px;
     max-width: 1600px;
     height: 600px;
     background-size: cover;
