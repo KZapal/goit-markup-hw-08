@@ -370,22 +370,36 @@
         </form>
       </div>
     </div>
-   <!-- <div class="menu-box js-menu-container" id="mobile-menu">
-      <button class="menu-box__menu-toggle js-close-menu">
-        X
+   <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__menu-toggle js-close-menu"><svg width="40px" height="40px"><use href="images/icons.svg#icon-close"></use></svg>
       </button>
-      <ul class="menu-box__mobile-menu">
-<li><a href=".">Agencja</a></li>
-<li><a href=".">Portfolio</a></li>
-<li><a href=".">Kontakt</a></li>
-      </ul></div> -->
+
+      <ul class="mobile-menu__page-links">
+        <li><a href="index.html" class="mobile-menu__page-link">Agencja</a></li>
+        <li><a href="portfolio.html" class="mobile-menu__page-link">Portfolio</a></li>
+        <li><a href="index.html" class="mobile-menu__page-link">Kontakt</a></li>
+        </ul>
+        <ul class="mobile-menu__adress-links">
+        <li><a href="tel:48111111111" class="mobile-menu__adress-link mobile-menu__adress-link--tel">+48 111 111 111</a></li>
+        <li><a href="mailto:info@devstudio.com" class="mobile-menu__adress-link">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mobile-menu__socials-links">
+          <li><a href="/" class="mobile-menu__socials-link">Instagram</a></li>
+          <li>|</li>
+          <li><a href="/" class="mobile-menu__socials-link">Twitter</a></li>
+          <li>|</li>
+          <li><a href="/" class="mobile-menu__socials-link">Facebook</a></li>
+          <li>|</li>
+          <li><a href="/" class="mobile-menu__socials-link">Linkedin</a></li>
+      </ul>
+    </div>
     <script src="./JS/modal.js"></script>
-    <!-- <script
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./JS/mobile-menu.js"></script> -->
+    <script defer src="./JS/mobile-menu.js"></script>
   </body>
 </html>

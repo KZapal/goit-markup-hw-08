@@ -1,0 +1,68 @@
+.mobile-menu {
+  font-weight: $MediumFontWeight;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: getColor('accentLight');
+  z-index: 999;
+  transform: translateX(100%);
+  transition: $trans;
+
+  &__menu-toggle {
+    position: absolute;
+    top: 21px;
+    right: 25.33px;
+    background-color: getColor('accentLight');
+    border: none;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+      fill: getColor('accent');
+    }
+  }
+  &__page-links {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-bottom: 302px;
+    font-size: 40px;
+  }
+  &__page-link {
+    color: getColor('accentDark');
+    &:focus,
+    &:hover {
+      color: getColor('accent');
+    }
+  }
+  &__adress-links {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+    font-size: 24px;
+  }
+  &__adress-link {
+    color: getColor('secondary');
+  }
+  &__adress-link--tel {
+    font-size: 34px;
+    color: getColor('accent');
+  }
+  &__socials-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: getColor('secondary');
+  }
+  &__socials-link {
+    color: getColor('accent');
+    font-size: 18px;
+  }
+}
+
+.is-open {
+  transform: translateX(0);
+}

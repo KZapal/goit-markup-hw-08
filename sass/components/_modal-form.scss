@@ -1,130 +1,15 @@
-@media (max-width: 767px) {
-  .modal-form {
-    padding: 40px;
-
-    &__heading {
-      font-weight: $BigFontWeight;
-      font-size: $GreaterFontSize + 4px;
-      line-height: 1.5;
-      text-align: center;
-      letter-spacing: 0.6px;
-      margin-bottom: 30px;
-      margin-top: 0;
-      width: 370px;
-    }
-    &__item {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 4px;
-      font-size: $RegularFontSize - 2px;
-      line-height: 1.2;
-      color: getColor('secondary');
-      letter-spacing: 0.01em;
-    }
-    &__area {
-      border: 1px solid #21212133;
-      border-radius: 4px;
-      position: relative;
-      width: 370px;
-      height: 40px;
-      margin-bottom: 20px;
-    }
-    &__area--comment {
-      width: 370px;
-      height: 120px;
-      padding: 12px 16px;
-      resize: none;
-      outline: none;
-      &:focus {
-        border: 1px solid #2196f3;
-        border-radius: 4px;
-        transition: $trans;
-      }
-      &:-ms-input-placeholder {
-        font-size: $RegularFontSize - 2px;
-        color: #75757580;
-      }
-      &::-webkit-input-placeholder {
-        font-size: $RegularFontSize - 2px;
-        color: #75757580;
-      }
-    }
-    &__input {
-      border: 0;
-      outline: none;
-      width: 100%;
-      height: 100%;
-      padding-left: 42px;
-      padding-right: 12px;
-
-      &:focus {
-        border: 1px solid getColor('accent');
-        border-radius: 4px;
-        transition: $trans;
-      }
-    }
-    &__icon {
-      position: absolute;
-      left: 0;
-      margin: 11px 12px;
-      fill: #212121;
-    }
-    &__input:focus + &__icon {
-      fill: getColor('accent');
-      transition: $trans;
-    }
-    &__checkbox {
-      font-size: $RegularFontSize - 2px;
-      color: #757575;
-      position: relative;
-      display: flex;
-      justify-content: flex-end;
-      letter-spacing: 0.36px;
-
-      & a {
-        color: getColor('accent');
-      }
-    }
-    &__input-checkbox {
-      display: none;
-
-      & + label svg {
-        position: absolute;
-        top: -2px;
-        left: 0;
-        width: 16px;
-        height: 15px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        border-radius: 2px;
-        fill: getColor('accentLight');
-        cursor: pointer;
-      }
-      &:checked + label svg {
-        background-color: getColor('accent');
-        border: 1px solid getColor('accent');
-        transition: $trans;
-      }
-    }
-    &__btn-send {
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      text-align: center;
-      letter-spacing: 0.06em;
-      margin-top: 30px;
-      margin-left: 25%;
-    }
-  }
-}
-
-/** .modal-form {
+.modal-form {
   padding: 40px;
 
   &__heading {
     font-weight: $BigFontWeight;
     font-size: $GreaterFontSize + 4px;
-    line-height: 1.1;
+    line-height: 1.5;
     text-align: center;
-    margin-bottom: 12px;
+    letter-spacing: 0.6px;
+    margin-bottom: 30px;
     margin-top: 0;
+    width: 370px;
   }
   &__item {
     display: flex;
@@ -139,12 +24,12 @@
     border: 1px solid #21212133;
     border-radius: 4px;
     position: relative;
-    width: 448px;
+    width: 370px;
     height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   &__area--comment {
-    width: 448px;
+    width: 370px;
     height: 120px;
     padding: 12px 16px;
     resize: none;
@@ -188,12 +73,12 @@
     transition: $trans;
   }
   &__checkbox {
-    font-size: $RegularFontSize;
-    line-height: 1.7;
+    font-size: $RegularFontSize - 2px;
     color: #757575;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    letter-spacing: 0.36px;
 
     & a {
       color: getColor('accent');
@@ -204,8 +89,8 @@
 
     & + label svg {
       position: absolute;
-      top: 5px;
-      left: 14px;
+      top: -2px;
+      left: 0;
       width: 16px;
       height: 15px;
       border: 1px solid rgba(33, 33, 33, 0.2);
@@ -227,4 +112,32 @@
     margin-left: 25%;
   }
 }
-**/
+
+@media (min-width: 1200px) {
+  .modal-form {
+    &__heading {
+      line-height: 1.1;
+      margin-bottom: 12px;
+      margin-top: 0;
+    }
+    &__area {
+      width: 448px;
+      margin-bottom: 10px;
+    }
+    &__area--comment {
+      width: 448px;
+    }
+    &__checkbox {
+      font-size: $RegularFontSize;
+      line-height: 1.7;
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    &__input-checkbox {
+      & + label svg {
+        top: 3px;
+      }
+    }
+  }
+}

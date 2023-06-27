@@ -14,12 +14,12 @@
     position: relative;
   }
   &__description {
-    font-size: $GreaterFontSize + 2px;
     line-height: 1.5;
     color: getColor('accentLight');
     background: getColor('accent');
     text-align: left;
-    padding: 49px 45px 49px 24px;
+    padding: 77px 24px;
+    letter-spacing: 0.54px;
     margin: 0;
 
     position: absolute;

@@ -1,42 +1,10 @@
 @import './modal-form';
-@media (max-width: 767px) {
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 450px;
-    min-height: 581px;
-    background-color: getColor('accentLight');
-
-    &__close-btn {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      width: 30px;
-      height: 30px;
-      background-color: #ffffff;
-      border: 1px solid #0000001a;
-      border-radius: 50%;
-      text-decoration: bold;
-      text-transform: uppercase;
-      cursor: pointer;
-
-      &:hover,
-      &:focus {
-        color: getColor('accent');
-      }
-    }
-  }
-}
-
-/**
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background-color: getColor('accentLight');
 
@@ -52,6 +20,17 @@
     text-decoration: bold;
     text-transform: uppercase;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: getColor('accent');
+    }
   }
 }
-**/
+
+@media (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+}

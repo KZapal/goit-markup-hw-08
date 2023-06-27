@@ -3,6 +3,44 @@
 .project-cards {
   &__menu {
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    width: 121px;
+    height: 38px;
+    color: inherit;
+    background-color: getColor('third');
+    padding: 6px 22px;
+    font-weight: $MediumFontWeight;
+    line-height: 1.6;
+    border: getColor('third');
+
+    &:hover,
+    &:focus {
+      background-color: getColor('accent');
+      color: getColor('accentLight');
+      transition: $trans;
+    }
+  }
+  &__tables {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-between;
+
+    & > li:hover {
+      box-shadow: 0px 1px 1px #0000001f, 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px #00000029;
+      transition: $trans;
+    }
+  }
+}
+
+/** .project-cards {
+  &__menu {
+    display: flex;
     margin-bottom: 50px;
     justify-content: center;
     gap: 8px;
@@ -43,4 +81,4 @@
       transition: $trans;
     }
   }
-}
+} **/
