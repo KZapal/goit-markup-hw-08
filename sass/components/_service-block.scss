@@ -1,8 +1,9 @@
 .service-block {
+  min-width: 320px;
   max-width: 767px;
   height: 400px;
   background-image: linear-gradient(#2f303a66, #2f303a66),
-    url(https://raw.githubusercontent.com/KZapal/goit-markup-hw-08/main/images/effective_solutions/people_at_work.jpg);
+    url(/images/effective_solutions/people_at_work.jpg);
   background-color: #2f303a66;
   background-size: cover;
   background-position: center;
@@ -19,7 +20,7 @@
   }
   &__heading {
     color: getColor('accentLight');
-    width: 365px;
+    max-width: 365px;
     font-weight: $BigBFontWeight;
     font-size: $GreaterFontSize + 10px;
     line-height: 1.6;
@@ -35,10 +36,19 @@
     line-height: 1.9;
   }
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .service-block {
+    background-image: linear-gradient(#2f303a66, #2f303a66),
+      url(/images/effective_solutions/peope_at_work@2x.jpg);
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .service-block {
     max-width: 1199px;
+    background-size: cover;
 
     &__heading {
       letter-spacing: 1.56px;
@@ -55,7 +65,7 @@
     padding-bottom: 97px;
 
     &__heading {
-      width: 696px;
+      max-width: 696px;
       font-size: $RegularFontSize + 30px;
       line-height: 1.4;
     }
