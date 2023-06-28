@@ -37,3 +37,15 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .project-cards {
+    &__menu {
+      justify-content: center;
+    }
+    &__tables {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
