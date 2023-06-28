@@ -1,10 +1,14 @@
 .lorem-list {
   &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-basis: calc((100% - 90px) / 4);
   }
   &__background {
     background: getColor('third');
     padding: 25px 190px;
+    height: 120px;
   }
   &__title {
     font-weight: $BigFontWeight;
